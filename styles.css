@@ -1,0 +1,69 @@
+body {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+figcaption {
+    font-size: 30px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+}
+
+.top-menu {
+  margin: 10px auto;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+figure img {
+  width: 42px;
+  height: 42px;
+  margin-right: 15px;
+}
+
+header {
+  justify-content: space-around;
+  background-image: url(./src/images/bg_img.png);
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mobile {
+  width: 100%;
+}
+.mobile img {
+  display: block;
+  margin: 0 auto;
+}
+#company-logo{
+  position: relative;
+  bottom: 500px;
+}
+.btns {
+  width:100%;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  bottom: 250px;
+}
+
+.btns button{
+  margin: 0 33px;
+}
