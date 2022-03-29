@@ -1,48 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="node_modules/normalize.css">
-  <link rel="stylesheet" href="styles.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="node_modules/normalize.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="carousel.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide-core.min.css"></link>
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css"></link>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuzort App</title>
 </head>
 <body>
-  <header>
-    <div class="top-menu">
-    <figure>
-      <img src="./src/images/app_icon.png" alt="neuzort icon">
-      <figcaption>neuzort</figcaption>
-    </figure>
-    
-    <nav>
-      <button href="google.com">Get App</button>
-      <a><img src="./src/images/search.png" alt="search button"></a>
-      <a><img src="./src/images/menu.png" alt="menu button"></a>
-    </nav>
-  </div>
-   <div class="mobile">
-     <img src="./src/images/phone.png" alt="phone">
-     <img id = "company-logo" src="./src/images/app logo.png" alt="neuzort logo">
-     <p class="mobile">DOWNDLOAD FROM</p>
-     <div class="btns">
-       
-       <button>Android device</button>
-       <button>Apple device</button>
-     </div>
-   </div>
-  </header>
-  
-  <main>
+<div class="container">
+    <header>
+        <div class="top-menu">
+            <figure>
+                <img src="./src/images/app_icon.png" alt="neuzort icon">
+                <figcaption>neuzort</figcaption>
+            </figure>
 
-  </main>
-  <footer>
+            <nav>
+                <a href="google.com" target="_blank" class="nav-link">Get App</a>
+                <a class="nav-link"><img src="./src/images/search.png" alt="search button"></a>
+                <a class="nav-link"><img src="./src/images/menu.png" alt="menu button"></a>
+            </nav>
+        </div>
+        <div class="mobile">
+            <div class="image-phone">
+                <img src="./src/images/phone.png" alt="phone">
+                <img id="company-logo" src="./src/images/app logo.png" alt="neuzort logo">
+            </div>
+            <div class="phone-field">
+                <p>DOWNLOAD FROM</p>
+                <div class="btns">
+                    <button class="button-header">Android device</button>
+                    <button class="button-header">Apple device</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Why is it special?</h2>
+        <div class="underline"></div>
+        <div class="elements-row">
+            <div class="row-element">
+                <img src="src/images/chelik.png" alt="">
+                <h3>UX Done</h3>
+                <p>In an ideal world this website
+                    wouldn’t exist, a client</p>
+            </div>
+            <div class="row-element">
+                <img src="src/images/lamp.png" alt="">
+                <h3>Very Easy</h3>
+                <p>In an ideal world this website
+                    wouldn’t exist, a client</p>
+            </div>
+            <div class="row-element">
+                <img src="src/images/secure.png" alt="">
+                <h3>Secure & Private</h3>
+                <p>In an ideal world this website
+                    wouldn’t exist, a client</p>
+            </div>       
+        </div>
+        <h2>Great Interface</h2>
+        <div class="underline"></div>
+        <div class="splide">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <!-- TO BE DONE Image description etc.-->
+                      <li class="splide__slide"><img class = "image-gallery" cover src="src/images/Layer 4.png" /> <div>Front Page</div></li>
+                      <li class="splide__slide"><img class = "image-gallery" src="src/images/Layer 7.png" /> <div>Next Page</div> </li>
+                      <li class="splide__slide"><img class = "image-gallery" src="src/images/Layer 9.png" /> <div>Next next page</div> </li>
+                      <li class="splide__slide"><img class = "image-gallery" src="src/images/Layer 10.png" /> <div>Next page</div> </li>
+                      <li class="splide__slide"><img class = "image-gallery" src="src/images/Layer 11.png" /> <div>New next page</div> </li>
+                  </ul>
+            </div>
+          </div>
+        <div class = "stat-container">
+            <div class = "statistics">
+                <p class = "stat-number">235K</p>
+                <div class="underline"></div>
+                <p>Users and more</p>
+            </div>
+            
+            
+            <div class = "statistics">
+                <p class = "stat-number">30</p>
+                <div class="underline"></div>
+                <p>Dollar per year!</p>
+            </div>
+            
+            <div class = "statistics">
+                <p class = "stat-number">500</p>
+                <div class="underline"></div>
+                <p>Employees in house</p>
+            </div>
 
-  </footer>
+            <div class = "statistics">
+                <p class = "stat-number">45</p>
+                <div class="underline"></div>
+                <p>Developers onsite</p>
+            </div>
+            
+        </div>
+        <h2>What they said?</h2>
+        <div class="underline"> </div>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slide1.png" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide2.png" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide3.png" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+        
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </main>
+</div>
+    <footer>
+
+    </footer>
+</div>
+
+<script>
+
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide' ,{
+            type : 'loop',
+            perPage: 7,
+            focus: 'center',
+            autoWidth: true,
+      } );
+      splide.mount();
+    } );
+  </script>
 </body>
 </html>

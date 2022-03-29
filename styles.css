@@ -1,35 +1,113 @@
-body {
-  background-color: black;
-  font-family: 'Open Sans', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, header, main, footer, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
 nav {
   display: flex;
   align-items: center;
   justify-content: end;
-  margin: 16px 40px;
 }
-nav button{
-  margin: 0 10px;
+
+.nav-link + .nav-link {
+  margin-left: 30px;
 }
-nav a {
-  margin: 0 10px;
+
+.nav-link:first-child {
+  background-color: #fb4441;
+  box-shadow: 0px 7px 11px #00000047;
+  border-radius: 25px;
+  padding: 15px 15px;
+}
+
+.nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: white;
 }
 
 figcaption {
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+
 }
 
 .top-menu {
-  margin: 10px auto;
+  margin: 0 auto;
   height: 75px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  
+  width: 50%;
+
 }
 
 figure {
@@ -44,40 +122,133 @@ figure img {
   margin-right: 15px;
 }
 
-button {
-  border-radius: 12px;
-  width: 100px;
-  background-color: #ee403e;
-  color: white;
-}
-
 header {
   justify-content: space-around;
-  background-image: url(./src/images/bg_img.png);
-  height: 1000px;
+  background-image: url('./src/images/bg_img.png');
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 150px;
 }
 
 .mobile {
   width: 100%;
+  margin-top: 160px;
 }
+
+.image-phone {
+  max-width: 700px;
+  margin: 0 auto;
+  max-height: 630px;
+}
+
 .mobile img {
   display: block;
   margin: 0 auto;
 }
-#company-logo{
+
+#company-logo {
   position: relative;
   bottom: 500px;
 }
-.btns {
-  width:100%;
-  justify-content: center;
-  display: flex;
+
+.phone-field {
   position: relative;
-  bottom: 300px;
+  text-align: center;
 }
 
-.btns button{
-  margin: 0 33px;
+.phone-field p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btns {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+.button-header + .button-header {
+  margin-left: 25px;
+}
+
+.button-header {
+  background-color: #fb4441;
+  padding: 15px 15px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 25px;
+  box-shadow: 0px 7px 11px #00000047;
+}
+main{
+  max-width: 1440px;
+  margin: 160px auto 0 auto;
+}
+main h2{
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 160px;
+  margin-bottom: 25px;
+}
+.elements-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 250px;
+}
+.row-element{
+  max-width: 220px;
+}
+.underline{
+  width: 70px;
+  margin: 10px auto 20px auto;
+  background-color: #fb4441;
+  height: 5px;
+}
+.row-element h3, .row-element p{
+  text-align: center;
+}
+.row-element h3{
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.row-element p{
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.image-gallery {
+  object-fit: cover;
+}
+
+.statistics {
+  margin: 6em auto;
+  
+}
+
+.statistics .underline{
+  width: 70px;
+  margin: 10px auto 20px 0;
+  background-color: #fb4441;
+  height: 5px;
+}
+.stat-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: pink;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 66px;
+  color:white;
 }
